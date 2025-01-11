@@ -7,9 +7,9 @@ const Hero = () => {
         <nav className="w-full py-4 px-4 sm:px-10 border-b border-gray-100">
             <ul className="flex justify-between items-center">
                 <a href="" className="text-sm font-normal">KERNINK ESTUDIO</a>
-                <a href="" className="text-sm font-light hidden sm:block">Servicios</a>
-                <a href="" className="text-sm font-light hidden sm:block">Trabajos</a>
-                <a href="" className="text-sm font-light">Contacto</a>
+                <a href="" className="hoverLink text-sm font-light hidden sm:block">Servicios</a>
+                <a href="" className="hoverLink text-sm font-light hidden sm:block">Trabajos</a>
+                <a href="" className="hoverLink text-sm font-light">Contacto</a>
             </ul>
         </nav>
 
@@ -37,7 +37,7 @@ const Hero = () => {
                 <div className="grid grid-cols-1 gap-10 animate-fade-in-down animate-duration-1000">
                     {portfolio.map(portfolio => (
                         <a href={portfolio.link} key={portfolio.id}>
-                            <picture className="block w-full ml-4 sm:ml-0 max-w-[1024px] h-[600px] sm:h-[800px] bg-slate-500 overflow-hidden">
+                            <picture className="block ml-auto w-full max-w-[96%] sm:max-w-[1024px] h-[600px] sm:h-[800px] bg-slate-500 overflow-hidden">
                                 <img src={portfolio.imgURL} alt={portfolio.name} className="w-full h-full object-cover transition hover:scale-105"/>
                             </picture>
                         </a>
@@ -46,15 +46,15 @@ const Hero = () => {
             </article>
         </section>
 
-        <footer className="flex flex-col sm:flex-row justify-between gap-4 sm:gap-0 items-start p-10 border-t border-gray-100">
+        <footer className="flex flex-col sm:flex-row justify-between gap-4 sm:gap-0 items-start px-4 py-10 sm:px-10 border-t border-gray-100">
             <h4 className="text-sm font-medium">KERNINK ESTUDIO <span>&copy;{new Date().getFullYear()}</span></h4>
             <ul>
-                <li><a href="mailto:"className="text-sm">Correo</a></li>
-                <li><a href="tel:+" className="text-sm">Whatsapp</a></li>
+                <li><a href="mailto:"className="hoverLink text-sm">Correo</a></li>
+                <li><a href="tel:+" className="hoverLink text-sm">Whatsapp</a></li>
             </ul>
             <ul>
-                <li><a href="" className="text-sm">Behance</a></li>
-                <li><a href="" className="text-sm">Instagram</a></li>
+                <li><a href="" className="hoverLink text-sm">Behance</a></li>
+                <li><a href="" className="hoverLink text-sm">Instagram</a></li>
             </ul>
         </footer>
     </div>
