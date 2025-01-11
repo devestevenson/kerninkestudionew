@@ -13,19 +13,19 @@ const Hero = () => {
             </ul>
         </nav>
 
-        <header className="my-[140px] sm:my-[200px] px-4 sm:px-10">
+        <header className="my-[140px] sm:my-[200px] px-4 sm:px-10 animate-fade-in-down animate-duration-600">
             <h1 className="text-lg mb-4 sm:mb-0">Trasmitimos ideas a través del diseño, logrando que los espectadores capten el mensaje que las marcas quieren comunicar.</h1>
             <h2 className="text-lg">Somos un equipo con experiencia en diferentes áreas del diseño grafico.</h2>
         </header>
 
         <section className="mb-[140px] sm:mb-[200px]">
-            <h3 className="mb-6 ml-4 sm:ml-10 font-semibold">Servicios</h3>
-            <div className="grid grid-cols-1">
+            <h3 className="mb-6 ml-4 sm:ml-10 font-semibold animate-fade-in-down animate-duration-700">Servicios</h3>
+            <div className="grid grid-cols-1 animate-fade-in-down animate-duration-800">
                 {services.map(service => (
                     <a href={service.urlWapp} key={service.id} className="grid grid-cols-1 sm:grid-cols-3 place-content-center h-[220px] sm:h-40 border border-gray-100 px-4 sm:px-10 transition text-[#505050] hover:text-[#161616]">
                         <h4 className="mb-4 sm:mb-0">{service.name}</h4>
                         <p className="w-full max-w-[634px]">{service.description}</p>
-                        <div className="flex justify-end items-end hidden sm:block"><ArrowUpRight size={20}/></div>
+                        <div className="hidden sm:flex justify-end items-center"><ArrowUpRight size={20} className="ml-auto"/></div>
                     </a>
                 ))}
             </div>
@@ -33,8 +33,8 @@ const Hero = () => {
 
         <section className="mb-[140px] sm:mb-[200px]">
             <article className="flex flex-col sm:flex-row justify-between items-start">
-                <h3 className="mb-6 ml-4 sm:ml-10 font-semibold">Trabajos</h3>
-                <div className="grid grid-cols-1 gap-10">
+                <h3 className="mb-6 ml-4 sm:ml-10 font-semibold animate-fade-in-down animate-duration-900">Trabajos</h3>
+                <div className="grid grid-cols-1 gap-10 animate-fade-in-down animate-duration-1000">
                     {portfolio.map(portfolio => (
                         <a href={portfolio.link} key={portfolio.id}>
                             <picture className="block w-full ml-4 sm:ml-0 max-w-[1024px] h-[600px] sm:h-[800px] bg-slate-500 overflow-hidden">
