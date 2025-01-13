@@ -49,12 +49,12 @@ const Hero = () => {
         <footer className="flex flex-col sm:flex-row justify-between gap-4 sm:gap-0 items-start px-4 py-10 sm:px-10 border-t border-gray-100">
             <h4 className="text-sm font-medium">KERNINK ESTUDIO <span>&copy;{new Date().getFullYear()}</span></h4>
             <ul>
-                <li><a href="mailto:"className="hoverLink text-sm">Correo</a></li>
-                <li><a href="tel:+" className="hoverLink text-sm">Whatsapp</a></li>
+                <li><a href="mailto:elcorreoquequieres@correo.com?Subject=Aquí%20el%20asunto%20del%20mail" target="_blank" className="hoverLink text-sm">Correo electrónico</a></li>
+                <li><a href="tel:+" target="_blank" className="hoverLink text-sm">Whatsapp</a></li>
             </ul>
             <ul>
-                <li><a href="" className="hoverLink text-sm">Behance</a></li>
-                <li><a href="" className="hoverLink text-sm">Instagram</a></li>
+                <li><a href="" target="_blank" className="hoverLink text-sm">Behance</a></li>
+                <li><a href="" target="_blank" className="hoverLink text-sm">Instagram</a></li>
             </ul>
         </footer>
     </div>

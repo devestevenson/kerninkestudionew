@@ -3,21 +3,21 @@ const portfolio = [
         id: 1,
         name: 'nombre',
         description: 'descripcion',
-        imgURL: 'https://images.pexels.com/photos/27578999/pexels-photo-27578999/free-photo-of-arte-creativo-textura-abstracto.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+        imgURL: 'https://res.cloudinary.com/dufgry4jr/image/upload/v1736726290/lo_azs857.jpg',
         link: 'https://wa.me/1234567890'
     },
     {
         id: 2,
         name: 'nombre',
         description: 'descripcion',
-        imgURL: 'https://images.pexels.com/photos/27578999/pexels-photo-27578999/free-photo-of-arte-creativo-textura-abstracto.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+        imgURL: 'https://res.cloudinary.com/dufgry4jr/image/upload/v1736726289/sm_nk0ehb.jpg',
         link: 'https://wa.me/1234567890'
     },
     {
         id: 3,
         name: 'nombre',
         description: 'descripcion',
-        imgURL: 'https://images.pexels.com/photos/27578999/pexels-photo-27578999/free-photo-of-arte-creativo-textura-abstracto.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+        imgURL: 'https://res.cloudinary.com/dufgry4jr/image/upload/v1736726289/ux_wobpho.jpg',
         link: 'https://wa.me/1234567890'
     },
 ]
